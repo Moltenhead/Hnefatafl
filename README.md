@@ -26,8 +26,8 @@ State | Features
 :x:| Local 2 players game
 :x:| Interactive UI
 :x:| Modular UI
-:construction:| Prototype for pathing system
-:question:| Creating A* pathing system
+:construction:| Prototype for pathfinding system (self made)
+:question:| Creating A* pathfinding system
 :x:| Initiating Deep Learning project
 :x:| First AI
 :x:| Online hosting
