@@ -14,7 +14,7 @@ If you want to [try](https://moltenhead.github.io/Hnefatafl) the master branch a
 **Stage:**|*not playable*
 -|-
 
-<hr/>
+<br/>
 
 ### How it is going
 State | Features
