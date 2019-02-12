@@ -37,10 +37,11 @@ State | Features
 :white_check_mark: isDone|:sparkles: isAKindOfMagic|:construction: isWIP|:coffee: isBrewing|:question: isNotSure| :white_large_square: isNotMade
 -|-|-|-|-|-
 
+<br/>
 <hr/>
 <br/>
 
-### Da Tree
+## Da Tree
 *Silence ... ça pousse.*
 
 :deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:blossom:|:herb:|:seedling:|I|:frog:
