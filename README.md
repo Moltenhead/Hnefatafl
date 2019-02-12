@@ -39,7 +39,7 @@ State | Features
 ## Da Tree
 *Silence ... ça pousse.*
 
-:deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:herb:|:seedling:||:vertical_traffic_light:
+:deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:herb:|:seedling:||:frog:
 -|-|-|-|-|-|-
 .|:file_folder:*design/*|||||
 .||:file_folder:*css/*||||
@@ -49,7 +49,7 @@ State | Features
 .|||:file_folder:*classes/*|||
 .||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Board.js)||:sunny:
 .||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)||:sweat_drops:
-.||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Pawn.js)||
+.||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Pawn.js)||:foggy:
 .||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TaflBoard.js)||:cloud:
 .||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Tile.js)||:sunny:
 .||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TileMap.js)||:sunny:
