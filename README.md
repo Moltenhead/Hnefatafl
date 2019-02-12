@@ -19,22 +19,22 @@ State | Features
 :sparkles:| [math.js matrices](http://mathjs.org/docs/datatypes/matrices.html) implementation
 :construction:| Functional pawn movements
 :coffee:| Modular pawns movement
-:x:| Initialazing games depending on rules
-:x:| Capture basic system
-:x:| Victory triggers
-:x:| App states management
-:x:| Local 2 players game
-:x:| Interactive UI
-:x:| Modular UI
+ :white_medium_small_square:| Initialazing games depending on rules
+ :white_medium_small_square:| Capture basic system
+ :white_medium_small_square:| Victory triggers
+ :white_medium_small_square:| App states management
+ :white_medium_small_square:| Local 2 players game
+ :white_medium_small_square:| Interactive UI
+ :white_medium_small_square:| Modular UI
 :construction:| Prototype for pathfinding system (self made)
 :question:| Creating A* pathfinding system
-:x:| Initiating Deep Learning project
-:x:| First AI
-:x:| Online hosting
-:x:| Online PvP
-:x:| Record game moves
+ :white_medium_small_square:| Initiating Deep Learning project
+ :white_medium_small_square:| First AI
+ :white_medium_small_square:| Online hosting
+ :white_medium_small_square:| Online PvP
+ :white_medium_small_square:| Record game moves
 
-:white_check_mark: is done|:sparkles: is a kind of magic|:construction: is WIP|:coffee: is brewing|:question: is not sure|:x: is not made
+:white_check_mark: is done|:sparkles: is a kind of magic|:construction: is WIP|:coffee: is brewing|:question: is not sure| :white_medium_small_square: is not made
 -|-|-|-|-|-
 
 <br/><br/>
