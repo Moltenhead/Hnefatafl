@@ -4,8 +4,8 @@
 
 ## Game Rules
 :construction:  *Being Processed ...*  :construction:
-<hr/>
 <br/>
+<hr/>
 
 ## Git Page
 If you want to [try](https://moltenhead.github.io/Hnefatafl) the master branch app.
