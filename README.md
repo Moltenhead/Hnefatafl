@@ -55,7 +55,7 @@ Root|*-1*|*-2*|*-3*|*-4*
 /||||[TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TileMap.js)
 /|||[core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)|
 /|[index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)|||
-/|[LICENCE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENCE)|||
+/|[LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENSE)|||
 /|[README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)|||
 
 <br/><br/>
