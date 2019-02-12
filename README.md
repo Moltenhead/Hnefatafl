@@ -2,10 +2,13 @@
 *Just trying to make a [Hnefatafl](https://en.wikipedia.org/wiki/Tafl_games) web board game*
 <br/><br/>
 
-# Git Page
+## Git Page
 If you want to [try](https://moltenhead.github.io/Hnefatafl) the master branch app.
 <hr/>
 <br/>
+
+## Game Rules
+:construction:
 
 ### How it is going
 State | Features
