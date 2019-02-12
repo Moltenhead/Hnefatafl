@@ -22,8 +22,8 @@ Features|:vertical_traffic_light:
 Base Classes|:white_check_mark:
 Boards basic customization|:white_check_mark:
 [math.js matrices](http://mathjs.org/docs/datatypes/matrices.html) implementation|:sparkles:
-Functional pawn movements|:construction:
-Modular pawns movement|:coffee:
+Functional pawn movements|:coffee:
+Modular pawns movement|:white_large_square:
 Initialazing games depending on rules|:white_large_square:
 Capture basic system|:white_large_square:
 Victory triggers|:white_large_square:
