@@ -4,7 +4,7 @@
 
 ## Game Rules
 :construction:  *Being Processed ...*  :construction:
-<br/><br/>
+<br/>
 <hr/>
 
 # Git Page
