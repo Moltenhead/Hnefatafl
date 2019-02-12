@@ -65,8 +65,8 @@ State | Features
 :frog: WeatherLord|:sunny: isAlright|:cloud: isShaddy|:sweat_drops: isRainingSweat|:ocean: isChaos
 -|-|-|-|-
 
-<br/><br/>
 <hr/>
+<br/>
 
 *Feedbacks are welcome [@Moltenhead](https://github.com/Moltenhead).*
 
