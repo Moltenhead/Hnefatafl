@@ -40,7 +40,7 @@ State | Features
 <hr/>
 <br/>
 
-## Da Tree
+# Da Tree
 *Silence ... ça pousse.*
 
 :deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:blossom:|:herb:|:seedling:|I|:frog:
