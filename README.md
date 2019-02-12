@@ -39,12 +39,12 @@ State | Features
 
 ### Da tree
 *happy trees make branches ... :seedling:*
-- [/](https://github.com/Moltenhead/Hnefatafl/tree/master)
-  - [design/](https://github.com/Moltenhead/Hnefatafl/tree/master/design)
+- /
+  - design/
     - css
       - [main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)
-  - [lib/](https://github.com/Moltenhead/Hnefatafl/tree/master/lib)
-    - [js/](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js)
+  - lib/
+    - js/
       - [classes/](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes)
       - [core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)
   - [index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)
