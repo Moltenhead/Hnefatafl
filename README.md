@@ -13,7 +13,7 @@ State | Features
 :white_check_mark:| Base Classes
 :white_check_mark:| Boards basic customization
 :construction:| Functional pawn movements
-:coffee:<br/><br/>| Modular pawns movement
+:coffee:| Modular pawns movement
 :x:| Initialazing games depending on rules
 :x:| Capture basic system
 :x:| Victory triggers
