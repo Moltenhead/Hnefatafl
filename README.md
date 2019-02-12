@@ -8,7 +8,7 @@ If you want to [try](https://moltenhead.github.io/Hnefatafl) the master branch a
 <br/>
 
 ## Game Rules
-:construction:*Being Processed ...*:construction:
+:construction:  *Being Processed ...*  :construction:
 <br/><br/><br/>
 
 ### How it is going
