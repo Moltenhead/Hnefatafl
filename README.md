@@ -19,22 +19,22 @@ State | Features
 :sparkles:| [math.js matrices](http://mathjs.org/docs/datatypes/matrices.html) implementation
 :construction:| Functional pawn movements
 :coffee:| Modular pawns movement
- :white_medium_small_square:| Initialazing games depending on rules
- :white_medium_small_square:| Capture basic system
- :white_medium_small_square:| Victory triggers
- :white_medium_small_square:| App states management
- :white_medium_small_square:| Local 2 players game
- :white_medium_small_square:| Interactive UI
- :white_medium_small_square:| Modular UI
+ :white_large_square:| Initialazing games depending on rules
+ :white_large_square:| Capture basic system
+ :white_large_square:| Victory triggers
+ :white_large_square:| App states management
+ :white_large_square:| Local 2 players game
+ :white_large_square:| Interactive UI
+ :white_large_square:| Modular UI
 :construction:| Prototype for pathfinding system (self made)
 :question:| Creating A* pathfinding system
- :white_medium_small_square:| Initiating Deep Learning project
- :white_medium_small_square:| First AI
- :white_medium_small_square:| Online hosting
- :white_medium_small_square:| Online PvP
- :white_medium_small_square:| Record game moves
+ :white_large_square:| Initiating Deep Learning project
+ :white_large_square:| First AI
+ :white_large_square:| Online hosting
+ :white_large_square:| Online PvP
+ :white_large_square:| Record game moves
 
-:white_check_mark: is done|:sparkles: is a kind of magic|:construction: is WIP|:coffee: is brewing|:question: is not sure| :white_medium_small_square: is not made
+:white_check_mark: is done|:sparkles: is a kind of magic|:construction: is WIP|:coffee: is brewing|:question: is not sure| :white_large_square: is not made
 -|-|-|-|-|-
 
 <br/><br/>
