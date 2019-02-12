@@ -48,12 +48,12 @@ State | Features
 .||:file_folder:*js/*|||I|
 .|||:file_folder:*classes/*||I|
 .||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Board.js)|I|:sunny:
-.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)|I|:sweat_drops:
+.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)|I|:umbrella:
 .||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Pawn.js)|I|:cloud:
 .||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TaflBoard.js)|I|:cloud:
 .||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Tile.js)|I|:sunny:
 .||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TileMap.js)|I|:sunny:
-.|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)||I|:sweat_drops:
+.|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)||I|:sunny:
 .|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)||||I|:sunny:
 .|- [LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENSE)||||I|
 .|- [README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)||||I|
