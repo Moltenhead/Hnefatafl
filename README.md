@@ -9,7 +9,7 @@ If you want to [try](https://moltenhead.github.io/Hnefatafl) the master branch a
 
 ## Game Rules
 :construction:
-<br>
+<br/><br/>
 
 ### How it is going
 State | Features
