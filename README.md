@@ -16,7 +16,7 @@ State | Features
 ------|---------
 :white_check_mark:| Base Classes
 :white_check_mark:| Boards basic customization
-:white_check_mark:| [math.js matrices](http://mathjs.org/docs/datatypes/matrices.html) implementation
+:sparkles:| [math.js matrices](http://mathjs.org/docs/datatypes/matrices.html) implementation
 :construction:| Functional pawn movements
 :coffee:| Modular pawns movement
 :x:| Initialazing games depending on rules
@@ -27,7 +27,7 @@ State | Features
 :x:| Interactive UI
 :x:| Modular UI
 :construction:| Prototype for pathing system
-:?:| Creating A* pathing system
+:question:| Creating A* pathing system
 :x:| Initiating Deep Learning project
 :x:| First AI
 :x:| Online hosting
