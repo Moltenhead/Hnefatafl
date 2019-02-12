@@ -61,7 +61,7 @@ State | Features
 .|- [LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENSE)|||||I|
 .|- [README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)|||||I|
 
-:frog: is Weather Lord|:sunny: is alright|:cloud: is shaddy|:sweat_drops: is raining sweat|:ocean: is chaos
+:frog: Weather Lord|:sunny: isAlright|:cloud: isShaddy|:sweat_drops: isRainingSweat|:ocean: isChaos
 -|-|-|-|-
 
 <br/><br/>
