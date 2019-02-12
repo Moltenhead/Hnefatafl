@@ -48,7 +48,7 @@ Record game moves|:white_large_square:
 *Silence ... ça pousse.*
 
 :deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:blossom:|:herb:|:seedling:|I|:frog:
--|-|-|-|-|-|-|-
+----------------|----------------|-------------|---------|------|----------|-|------
 .|:file_folder:*design/*|||||I|
 .||:file_folder:*css/*||||I|
 .|||- [main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|||I|:sunny:
