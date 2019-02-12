@@ -39,24 +39,24 @@ State | Features
 ## Da Tree
 *Silence ... ça pousse.*
 
-:deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:herb:|:seedling:||:frog:
+:deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:herb:|:seedling:|I|:frog:
 -|-|-|-|-|-|-
-.|:file_folder:*design/*|||||
-.||:file_folder:*css/*||||
-.|||- [main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|||:sunny:
-.|:file_folder:*lib/*|||||
-.||:file_folder:*js/*||||
-.|||:file_folder:*classes/*|||
-.||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Board.js)||:sunny:
-.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)||:sweat_drops:
-.||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Pawn.js)||:foggy:
-.||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TaflBoard.js)||:cloud:
-.||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Tile.js)||:sunny:
-.||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TileMap.js)||:sunny:
-.|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)|||:sweat_drops:
-.|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)|||||:sunny:
-.|- [LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENSE)|||||
-.|- [README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)|||||
+.|:file_folder:*design/*||||I|
+.||:file_folder:*css/*|||I|
+.|||- [main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)||I|:sunny:
+.|:file_folder:*lib/*||||I|
+.||:file_folder:*js/*|||I|
+.|||:file_folder:*classes/*||I|
+.||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Board.js)|I|:sunny:
+.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)|I|:sweat_drops:
+.||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Pawn.js)|I|:foggy:
+.||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TaflBoard.js)|I|:cloud:
+.||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Tile.js)|I|:sunny:
+.||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TileMap.js)|I|:sunny:
+.|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)||I|:sweat_drops:
+.|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)||||I|:sunny:
+.|- [LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENSE)||||I|
+.|- [README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)||||I|
 
 <br/><br/>
 <hr/>
