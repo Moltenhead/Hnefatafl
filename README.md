@@ -32,7 +32,7 @@ Local 2 players game|:white_large_square:
 Interactive UI|:white_large_square:
 Modular UI|:white_large_square:
 Prototype for pathfinding system (self made)|:construction:
-Creating A* pathfinding system:shipit:|:question:
+Creating A* [pathfinding system](http://www.cokeandcode.com/main/tutorials/path-finding/) :shipit:|:question:
 Initiating Deep Learning project|:white_large_square:
 First AI|:white_large_square:
 Online hosting|:white_large_square:
