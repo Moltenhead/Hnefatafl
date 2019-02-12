@@ -39,7 +39,6 @@ State | Features
 
 <br/>
 <hr/>
-<br/>
 
 ## Da Tree
 *Silence ... ça pousse.*
