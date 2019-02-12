@@ -37,7 +37,8 @@ State | Features
 :white_check_mark: isDone|:sparkles: isAKindOfMagic|:construction: isWIP|:coffee: isBrewing|:question: isNotSure| :white_large_square: isNotMade
 -|-|-|-|-|-
 
-<br/><br/>
+<hr/>
+<br/>
 
 ## Da Tree
 *Silence ... ça pousse.*
