@@ -39,7 +39,7 @@ State | Features
 ## Da Tree
 *happy trees make branches ... :seedling:*
 
-:deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:herb:|:seedling:
+:deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:herb:|:seedling:|:chestnut:
 -|-|-|-|-
 /|*design/*|||
 /||*css/*||
