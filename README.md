@@ -39,14 +39,14 @@ State | Features
 ## Da Tree
 *happy trees make branches ... :seedling:*
 
-Root|-1|-2|-3|-4
+Root|*-1*|*-2*|*-3*|*-4*
 -|-|-|-|-
-/|design/|||
-/||css/||
+/|*design/*|||
+/||*css/*||
 /|||[main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|
-/|lib/|||
-/||js/||
-/|||classes/|
+/|*lib/*|||
+/||*js/*||
+/|||*classes/*|
 /||||[Board.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Board.js)
 /||||[PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)
 /||||[Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Pawn.js)
