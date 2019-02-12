@@ -37,7 +37,7 @@ State | Features
 <br/><br/>
 
 ## Da Tree
-*happy trees make branches ... :seedling:*
+*Silence ... ça pousse.*
 
 :deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:herb:|:seedling:
 -|-|-|-|-
