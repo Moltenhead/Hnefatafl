@@ -41,22 +41,22 @@ State | Features
 
 :deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:herb:|:seedling:
 -|-|-|-|-
-/|*design/*|||
-/||*css/*||
-/|||[main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|
-/|*lib/*|||
-/||*js/*||
-/|||*classes/*|
-/||||[Board.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Board.js)
-/||||[PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)
-/||||[Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Pawn.js)
-/||||[TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TaflBoard.js)
-/||||[Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Tile.js)
-/||||[TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TileMap.js)
-/|||[core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)|
-/|[index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)|||
-/|[LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENSE)|||
-/|[README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)|||
+ |*design/*|||
+ ||*css/*||
+ |||[main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|
+ |*lib/*|||
+ ||*js/*||
+ |||*classes/*|
+ ||||[Board.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Board.js)
+ ||||[PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)
+ ||||[Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Pawn.js)
+ ||||[TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TaflBoard.js)
+ ||||[Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Tile.js)
+ ||||[TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TileMap.js)
+ |||[core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)|
+ |[index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)|||
+ |[LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENSE)|||
+ |[README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)|||
 
 <br/><br/>
 <hr/>
