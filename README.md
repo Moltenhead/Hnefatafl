@@ -35,9 +35,8 @@ State | Features
 :x:| Record game moves
 
 <br/><br/>
-<hr/>
 
-### Da tree
+### Da Tree
 *happy trees make branches ... :seedling:*
 
 /|1|2|3|4
