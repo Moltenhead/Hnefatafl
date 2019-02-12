@@ -27,7 +27,7 @@ State | Features
  :white_large_square:| Interactive UI
  :white_large_square:| Modular UI
 :construction:| Prototype for pathfinding system (self made)
-:question::shipit:| Creating A* pathfinding system
+:question:| Creating A* pathfinding system :shipit:
  :white_large_square:| Initiating Deep Learning project
  :white_large_square:| First AI
  :white_large_square:| Online hosting
