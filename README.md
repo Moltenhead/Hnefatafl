@@ -17,27 +17,27 @@ If you want to [try](https://moltenhead.github.io/Hnefatafl) the master branch a
 <br/>
 
 ### How it is going
-State | Features
-------|---------
-:white_check_mark:| Base Classes
-:white_check_mark:| Boards basic customization
-:sparkles:| [math.js matrices](http://mathjs.org/docs/datatypes/matrices.html) implementation
-:construction:| Functional pawn movements
-:coffee:| Modular pawns movement
- :white_large_square:| Initialazing games depending on rules
- :white_large_square:| Capture basic system
- :white_large_square:| Victory triggers
- :white_large_square:| App states management
- :white_large_square:| Local 2 players game
- :white_large_square:| Interactive UI
- :white_large_square:| Modular UI
-:construction:| Prototype for pathfinding system (self made)
-:question:| Creating A* pathfinding system :shipit:
- :white_large_square:| Initiating Deep Learning project
- :white_large_square:| First AI
- :white_large_square:| Online hosting
- :white_large_square:| Online PvP
- :white_large_square:| Record game moves
+Features|:vertical_traffic_light:
+--------|------------------------
+Base Classes|:white_check_mark:
+Boards basic customization|:white_check_mark:
+[math.js matrices](http://mathjs.org/docs/datatypes/matrices.html) implementation|:sparkles:
+Functional pawn movements|:construction:
+Modular pawns movement|:coffee:
+Initialazing games depending on rules|:white_large_square:
+Capture basic system|:white_large_square:
+Victory triggers|:white_large_square:
+App states management|:white_large_square:
+Local 2 players game|:white_large_square:
+Interactive UI|:white_large_square:
+Modular UI|:white_large_square:
+Prototype for pathfinding system (self made)|:construction:
+Creating A* pathfinding system|:shipit::question:
+Initiating Deep Learning project|:white_large_square:
+First AI|:white_large_square:
+Online hosting|:white_large_square:
+Online PvP|:white_large_square:
+Record game moves|:white_large_square:
 
 :white_check_mark: isDone|:sparkles: isAKindOfMagic|:construction: isWIP|:coffee: isBrewing|:question: isNotSure| :white_large_square: isNotMade
 -|-|-|-|-|-
