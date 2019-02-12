@@ -40,9 +40,8 @@ State | Features
 ### Da tree
 *happy trees make branches ... :seedling:*
 
-0|1|2|3|4
+/|1|2|3|4
 -|-|-|-|-
-/||||
 |design/|||
 ||css/||
 |||[main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|
