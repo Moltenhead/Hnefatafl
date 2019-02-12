@@ -41,16 +41,16 @@ State | Features
 
 /|1|2|3|4
 -|-|-|-|-
-|design/|||
-||css/||
-|||[main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|
-|lib/|||
-||js/||
-|||[classes/](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes)|
-|||[core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)|
-|[index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)|||
-|[LICENCE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENCE)|||
-|[README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)|||
+I|design/|||
+I||css/||
+I|||[main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|
+I|lib/|||
+I||js/||
+I|||[classes/](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes)|
+I|||[core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)|
+I|[index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)|||
+I|[LICENCE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENCE)|||
+I|[README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)|||
 
 <br/><br/>
 <hr/>
