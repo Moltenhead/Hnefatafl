@@ -43,18 +43,18 @@ State | Features
 -|-|-|-|-|-|-
 .|:file_folder:*design/*|||||
 .||:file_folder:*css/*||||
-.|||- [main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|||
+.|||- [main.css](https://github.com/Moltenhead/Hnefatafl/tree/master/design/css/main.css)|||:sunny:
 .|:file_folder:*lib/*|||||
 .||:file_folder:*js/*||||
 .|||:file_folder:*classes/*|||
-.||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Board.js)||
-.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)||
+.||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Board.js)||:sunny:
+.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/PathFinder.js)||:sweet_drops:
 .||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Pawn.js)||
-.||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TaflBoard.js)||
-.||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Tile.js)||
-.||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TileMap.js)||
-.|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)|||
-.|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)|||||
+.||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TaflBoard.js)||:cloud:
+.||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/Tile.js)||:sunny:
+.||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/classes/TileMap.js)||:sunny:
+.|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/master/lib/js/core.js)|||:sweet_drops:
+.|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)|||||:sunny:
 .|- [LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENSE)|||||
 .|- [README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)|||||
 
