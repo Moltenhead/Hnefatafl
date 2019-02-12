@@ -34,7 +34,7 @@ State | Features
  :white_large_square:| Online PvP
  :white_large_square:| Record game moves
 
-:white_check_mark: is done|:sparkles: is a kind of magic|:construction: is WIP|:coffee: is brewing|:question: is not sure| :white_large_square: is not made
+:white_check_mark: isDone|:sparkles: isAKindOfMagic|:construction: isWIP|:coffee: isBrewing|:question: isNotSure| :white_large_square: isNotMade
 -|-|-|-|-|-
 
 <br/><br/>
