@@ -57,6 +57,10 @@ State | Features
 .|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/master/index.html)||||I|:sunny:
 .|- [LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/master/LICENSE)||||I|
 .|- [README.md](https://github.com/Moltenhead/Hnefatafl/tree/master/README.md)||||I|
+:frog: is weather master
+:sunny: is alright
+:cloud: is shaddy
+:sweat_drops: is raining sweat
 
 <br/><br/>
 <hr/>
