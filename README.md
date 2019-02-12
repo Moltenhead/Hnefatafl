@@ -35,5 +35,5 @@ State | Features
 <br/><br/>
 <hr/>
 
-*Feedbacks are welcome @Moltenhead.*
+*Feedbacks are welcome [@Moltenhead](https://github.com/Moltenhead).*
 
