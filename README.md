@@ -11,7 +11,7 @@
 If you want to [try](https://moltenhead.github.io/Hnefatafl) the master branch app.
 <br/><br/>
 
-Stage:|*not playable*
+**Stage:**|*not playable*
 -|-
 
 <hr/>
