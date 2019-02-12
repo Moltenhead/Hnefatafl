@@ -27,6 +27,7 @@ State | Features
 :x:| Online hosting
 :x:| Online PvP
 :x:| Record game moves
+
 <br/><br/>
 <hr/>
 
