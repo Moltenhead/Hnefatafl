@@ -1,20 +1,24 @@
-class Tile
+import { CSSBorders } from '../utilities/ArrayLike';
+import { ITile } from './ITile';
+
+export class Tile
 {
-  // _container;
+  private _container: JQuery;
 
-  // _selector;
+  private _selector: JQuery;
 
-  // _top;
-  // _left;
+  public top: number;
+  public left: number;
 
-  // _colName;
-  // _rowName;
+  public col: number;
+  public row: number;
 
-  // _color;
+  private _color: String;
+  private _border: CSSBorders;
 
-  constructor(container, size, columnIndex, rowIndex) {
+  constructor(container: JQuery, size: number, columnIndex: number, rowIndex: number) {
     if (!container) {
-      console.error("Tile needs a parent as 1st argument.")
+      console.error("Tile needs a JQuery parent as 1st argument.")
     }
     this._container = container;
 
@@ -22,16 +26,16 @@ class Tile
       class: "tile"
     })
 
-    this._col = columnIndex;
-    this._row = rowIndex;
+    this.col = columnIndex;
+    this.row = rowIndex;
 
-    this._border = 'none';
+    this.border = new CSSBorders("none");
 
     this.selector.css({
       'width': size + "px",
       'height': size + "px",
       'position': "absolute",
-      'gridArea': (this._col + 1) + " / " + (this._row +1)
+      'gridArea': (this.col + 1) + " / " + (this.row +1)
     });
 
     return this
@@ -45,17 +49,11 @@ class Tile
     // set x(v) { this._left = v; }
     // get x() { return this._left; }
 
-    set col(v) { this._colName = v; }
-    get col() { return this._colName; }
-    set row(v) { this._rowName = v; }
-    get row() { return this._rowName; }
     set color(v) {
       this._color = v;
-      this.selector.css({
-        'backgroundColor': v
-      });
+      this.selector.css('backgroundColor', v);
     }
-    set border(v) {
+    set border(v: CSSBorders) {
       this._border = v;
       this.selector.css({
         'borderTop': v.top,
@@ -63,6 +61,9 @@ class Tile
         'borderBottom': v.bottom,
         'borderLeft': v.left
       });
+    }
+    get border() {
+      return this._border;
     }
 //  read only
     get container() { return this._container; }

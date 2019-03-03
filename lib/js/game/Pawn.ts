@@ -1,20 +1,23 @@
+import { Board } from "./Board";
+import { Coordinates } from '../utilities/ICoordinates';
+
 /*  Base pawn object
 *
 *   declaration:
 *       new Pawn($Board, pawnType, pawnColor)
 */
-class Pawn
+export class Pawn
 {
-  boardParent;
+  public boardParent: Board;
 
-  _left;
-  _right;
+  private _left: number;
+  private _right: number;
 
-  _selector;
-  _isDownPressed;
+  private _selector: JQuery;
+  private _isDownPressed: JQuery;
 
-  constructor(board, type, color) {
-    if (boardParent.constructor.name != "Board") {
+  constructor(board: Board, /*type: PawnType,*/ color: String) {
+    if (board.constructor.name != "Board") {
       console.error("Object must have a Board object as 1st parameter");
       return;
     }
@@ -64,7 +67,7 @@ class Pawn
   get selector() { return this._selector; }                                   // jQuery elt
   get isDownPressed() { return this._isDownPressed; }                         // down pressed state
 
-  trySetToNearestCell() {
+  trySetToNearestTile() {
     var board = this.boardParent;
 
     if (!board) {
@@ -72,9 +75,9 @@ class Pawn
       return;
     }
 
-    var cell__target = board.getNearestCell(this.x, this.y);                //requesting the nearest cell object
-    if (cell__target.validity === false) {
-      console.error("Can't place on cell " + cell__target.locationToString())
+    var tile__target = board.getNearestTile({ x: 0, y: 0 });                //requesting the nearest tile object
+    if (tile__target.validity === false) {
+      console.error("Can't place on tile " + tile__target.locationToString())
     }
   }
 }

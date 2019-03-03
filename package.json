@@ -1,0 +1,31 @@
+{
+  "name": "Hnefatafl",
+  "version": "1.0.0",
+  "private": true,
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Moltenhead/Hnefatafl.git"
+  },
+  "description": "Hnefatafl web app board game",
+  "scripts": {
+    "tsc": "tsc",
+    "tsc:w": "tsc -w",
+    "lite": "lite-server",
+    "start": "concurrently \"npm run tsc:w\" \"npm run lite\" "
+  },
+  "author": "Charlie GARDAI - Moltenhead",
+  "license": "GPL-3.0-only",
+  "dependencies": {
+    "jquery": "^3.3.1"
+  },
+  "devDependencies": {
+    "@types/jquery": "^3.3.29",
+    "@types/mathjs": "^5.0.0",
+    "concurrently": "^4.1.0",
+    "lite-server": "^2.4.0",
+    "math.js": "^1.1.43",
+    "mathjs": "^5.4.2",
+    "tsd": "^0.6.5",
+    "typescript": "^3.3.3"
+  }
+}

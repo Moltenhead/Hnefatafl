@@ -1,4 +1,4 @@
-class PathFinder
+export class PathFinder
 {
   constructor(columnsNb, rowsNb) {
     this._matrix = math.zeros([columnsNb, rowsNb]);
