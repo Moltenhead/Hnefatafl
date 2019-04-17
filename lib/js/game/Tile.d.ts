@@ -1,6 +1,6 @@
 /// <reference types="jquery" />
 import { CSSBorders } from '../utilities/ArrayLike';
-export declare class Tile {
+export default class Tile {
     private _container;
     private _selector;
     top: number;

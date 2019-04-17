@@ -1,7 +1,7 @@
 import { CSSBorders } from '../utilities/ArrayLike';
 // import { ITile } from './ITile';
 
-export class Tile
+export default class Tile
 {
   private _container: JQuery;
 

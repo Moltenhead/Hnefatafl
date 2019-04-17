@@ -1,5 +1,5 @@
 /// <reference types="jquery" />
-import { Tile } from "./Tile";
+import Tile from "./Tile";
 import { Matrix } from "mathjs";
 import { PathFinder } from "./PathFinder";
 import { ICoordinates } from '../utilities/ICoordinates';

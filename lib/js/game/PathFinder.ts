@@ -1,7 +1,10 @@
+import * as math from "mathjs";
+import { Matrix } from "mathjs";
 export class PathFinder
 {
-  constructor(columnsNb, rowsNb) {
-    this._matrix = math.zeros([columnsNb, rowsNb]);
+  private _matrix: Matrix;
+  constructor(columnsNb: number, rowsNb: number) {
+    this._matrix = <Matrix>math.zeros([columnsNb, rowsNb]);
     console.debug(this._matrix);
   }
 }

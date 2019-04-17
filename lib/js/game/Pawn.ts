@@ -1,5 +1,5 @@
 import { Board } from "./Board";
-import { Coordinates } from '../utilities/ICoordinates';
+// import { ICoordinates } from '../utilities/ICoordinates';
 
 /*  Base pawn object
 *
@@ -12,8 +12,8 @@ export class Pawn
 
   private _left: number;
   private _top: number;
-  private _right: number;
-  private _bottom: number;
+  // private _right: number;
+  // private _bottom: number;
 
   private _selector: JQuery;
   private _isDownPressed: Boolean;
@@ -34,27 +34,34 @@ export class Pawn
 
     // Events
     const $this = this._selector
-    $this.mousedown($this, function(e: MouseEvent) {
+    $this.mousedown(this, function(e: JQuery.Event) {
       _this._isDownPressed = true;
+      let mouse__top: string = `${e.pageY}`;
+      let mouse__left: string = `${e.pageX}`;
+      $this.css({
+        position: "absolute",
+        top: mouse__top,
+        left: mouse__left
+      })
     });
-    $this.mousemove($this, function(e: MouseEvent) {
-      if (this._isDownPressed == false) {
+    $this.mousemove(this, function(e: JQuery.Event) {
+      if (_this._isDownPressed == false) {
         console.debug("Object isn't mouse down pressed.");
         return;
       }
-      let mouse__top = e.top;
-      let mouse__left = e.left;
-      _this.css({
+      let mouse__top: string = `${e.pageY}`;
+      let mouse__left: string = `${e.pageX}`;
+      $this.css({
         top: mouse__top,
         left: mouse__left 
       });
     });
-    $this.mouseup($this, function(e: MouseEvent) {
+    $this.mouseup($this, function(e: JQuery.Event) {
       _this._isDownPressed = false;
       _this.trySetToNearestTile();
     });
 
-    this.boardParent.append(this.selector);
+    this.boardParent.append(this);
   }
 
 //  GET / SET
@@ -67,14 +74,14 @@ export class Pawn
   get isDownPressed() { return this._isDownPressed; }                         // down pressed state
 
   trySetToNearestTile() {
-    var board = this.boardParent;
+    let board = this.boardParent;
 
     if (!board) {
       console.error("Can't place pawn to undefined board.");
       return;
     }
 
-    var tile__target = board.getNearestTile({ x: 0, y: 0 });                //requesting the nearest tile object
+    let tile__target = board.getNearestTile({ x: 0, y: 0 });                //requesting the nearest tile object
     if (tile__target.validity === false) {
       console.error("Can't place on tile " + tile__target.tile.locationToString())
     }

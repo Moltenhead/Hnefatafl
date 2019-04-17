@@ -4,8 +4,6 @@ export declare class Pawn {
     boardParent: Board;
     private _left;
     private _top;
-    private _right;
-    private _bottom;
     private _selector;
     private _isDownPressed;
     constructor(board: Board, color: string);

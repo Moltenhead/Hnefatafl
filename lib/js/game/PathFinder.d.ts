@@ -1,3 +1,4 @@
 export declare class PathFinder {
-    constructor(columnsNb: any, rowsNb: any);
+    private _matrix;
+    constructor(columnsNb: number, rowsNb: number);
 }

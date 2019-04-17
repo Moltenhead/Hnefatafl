@@ -1,4 +1,4 @@
-import { Tile } from './Tile';
+import Tile from './Tile';
 export interface ITile {
     validity: boolean;
     tile: Tile;

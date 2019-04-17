@@ -1,4 +1,7 @@
-import TileMap from "./TileMap"
+import * as math from "mathjs";
+import TileMap from "./TileMap";
+import Tile from "./Tile";
+import { Pawn } from "./Pawn";
 
 export class Board extends TileMap
 {
@@ -12,9 +15,11 @@ export class Board extends TileMap
     var computedWidth = this.width + tileSize * 2;
     var computedHeight = this.height + tileSize * 2;
 
-    this.selector.css("width", computedWidth + "px");
-    this.selector.css("height", computedHeight + "px");
-    this.selector.css("backgroundColor", tileColors[2]);
+    this.selector.css({
+      width: computedWidth + "px",
+      height: computedHeight + "px",
+      backgroundColor: tileColors[2]
+    });
 
     this.selector.addClass("board");
 
@@ -31,36 +36,36 @@ export class Board extends TileMap
   }
 
   colorize() {
-    var _this = this;
-    this.grid.forEach(function(tile, index) {
-      var c = index[0];
-      var r = index[1];
-      tile.color = ((c + r) % 2 === 0) ? _this.getColor(0) : _this.getColor(1);
-      if (_this.tileBorders) {
-        var endString = "px " + _this.tileBorders[1] + " " + _this.getColor(3);
-        var fullString = <number>_this.tileBorders[0] + endString;
-        var halvedString = <number>_this.tileBorders[0] / 2 + endString;
-        var borders = {
-          left: undefined,
-          right: undefined,
-          top: undefined,
-          bottom: undefined,
+    const { columnsNb, rowsNb } = this
+    this.grid.forEach((tile: Tile, index: number) => {
+      var c = index%columnsNb;
+      var r = index/columnsNb;
+      tile.color = ((c + r) % 2 === 0) ? this.getColor(0) : this.getColor(1);
+      if (this.tileBorders) {
+        var endString = "px " + this.tileBorders[1] + " " + this.getColor(3);
+        var fullString = <number>this.tileBorders[0] + endString;
+        var halvedString = <number>this.tileBorders[0] / 2 + endString;
+        let borders: any = {
+          left: <undefined | string>halvedString,
+          right: <undefined | string>halvedString,
+          top: <undefined | string>halvedString,
+          bottom: <undefined | string>halvedString,
         };
-        jQuery.each(borders, function(index) {
-          borders[index] = halvedString;
+        jQuery.each(borders, (key: string) => {
+          borders[key] = halvedString;
         })
 
         if(c === 0) {
-          borders['top'] = fullString;
+          borders.top = fullString;
         }
-        if(c >= _this.columnsNb - 1) {
-          borders['bottom'] = fullString;
+        if(c >= columnsNb - 1) {
+          borders.bottom = fullString;
         }
         if (r === 0) {
-          borders['left'] = fullString;
+          borders.left = fullString;
         }
-        if (r >= _this.rowsNb - 1) {
-          borders['right'] = fullString;
+        if (r >= rowsNb - 1) {
+          borders.right = fullString;
         }
 
         // console.debug(borders);
@@ -69,11 +74,11 @@ export class Board extends TileMap
     });
   }
 
-  getColor(index) {
+  getColor(index: number) {
       return this.tileColors[index];
   }
 
-  append(object: Pawn) {
+  append(pawn: Pawn) {
     
   }
 }
@@ -82,7 +87,7 @@ export class TaflBoard extends Board
 {
   public cToC: Path2D;
 
-  public castles: Array<HTMLCollection>;
+  public castles: Tile[];
 
   public fullSizeCanvas: HTMLCanvasElement;
 
@@ -91,8 +96,8 @@ export class TaflBoard extends Board
     tileSize: number,
     columnsNb: number,
     rowsNb: number,
-    tileColors: Array<String>,
-    tileBorders: Array<number|String>
+    tileColors: Array<string>,
+    tileBorders: Array<number|string>
   ) {
     super(wrapper, tileSize, columnsNb, rowsNb, tileColors, tileBorders);
 
@@ -126,7 +131,7 @@ export class TaflBoard extends Board
     // });
 
     this.fullSizeCanvas = document.createElement("canvas");
-    var wantedValue = tileSize - tileBorders[0];
+    let wantedValue = tileSize - <number>tileBorders[0];
     $(this.fullSizeCanvas).attr('width', wantedValue);
     $(this.fullSizeCanvas).attr('height', wantedValue);
     $(this.fullSizeCanvas).css({
@@ -135,45 +140,50 @@ export class TaflBoard extends Board
     })
 
     this.cToC = new Path2D();
-    this.cToC.moveTo(0,0);
-    this.cToC.lineTo(wantedValue,wantedValue);
-    this.cToC.moveTo(wantedValue,0);
-    this.cToC.lineTo(0,wantedValue);
+    const {cToC} = this;
+    cToC.moveTo(0,0);
+    cToC.lineTo(wantedValue,wantedValue);
+    cToC.moveTo(wantedValue,0);
+    cToC.lineTo(0,wantedValue);
   
     // this.cornerToCornerSVGTemplate.append(firstSVGLine);
     // this.cornerToCornerSVGTemplate.append(secondSVGLine);
     
     var _this = this;
-    this.grid.forEach(function (tile, index) {
-      if (
-        index === [0,0] ||
-        index === [0, rowsNb - 1] ||
-        index === [columnsNb - 1, 0] ||
-        [columnsNb - 1, rowsNb - 1]
-      ) {
-        console.debug(index);
-        tile.selector.addClass('tafl-castle');
-        tile.selector.append($(_this.cornerToCornerSVGTemplate).clone());
-        _this.castles.push(tile);
-      }
+    const { grid } = this
+    const corners = [
+      grid.get([0,0]),
+      grid.get([0,columnsNb-1]),
+      grid.get([rowsNb-1,0]),
+      grid.get([rowsNb-1,columnsNb-1])
+    ]
+    corners.forEach(function (tile: Tile) {
+      tile.selector.addClass('tafl-castle');
+      tile.selector.append(<HTMLCanvasElement>$("<canvas/>").get(0));
+      _this.castles.push(tile);
     });
 
-    var tileTarget = this.grid.subset(
+    const tileTarget = <Tile>this.grid.subset(
       math.index(
         Math.floor(columnsNb/2),
         Math.floor(rowsNb/2)
       )
-    );
+    ).get([0,0]);
 
     tileTarget.selector.addClass('tafl-castle tafl-king-hill');
-    tileTarget.selector.append($(this.cornerToCornerSVGTemplate).clone());
+    tileTarget.selector.append(<HTMLCanvasElement>$("<canvas/>").get(0));
     this.castles.push(tileTarget);
 
-    var tafleCastle = document.getElementsByClassName("tafl-castle")
-    for (var i = 0; i < tafleCastle.length; i++) {
-      var targetCanvas = tafleCastle[i].firstElementChild.getContext("2d");
-      targetCanvas.lineWidth = tileBorders[0];
-      targetCanvas.stroke(this.cToC);
+    const $tafleCastles: JQuery = $("canvas.tafl-castle")
+    for (let i = 0; i < $tafleCastles.length; i++) {
+      const targetCanvas = <HTMLCanvasElement>$($tafleCastles[i]).children('canvas').get(0)
+      const context = targetCanvas.getContext("2d");
+      if (context) {
+        context.lineWidth = <number>tileBorders[0];
+        context.stroke(this.cToC);
+      } else {
+        console.error("context is null or undefined", context)
+      }
     }
 
     return this;
