@@ -1,3 +1,4 @@
+/// <reference types="jquery" />
 import { CSSBorders } from '../utilities/ArrayLike';
 export declare class Tile {
     private _container;
@@ -13,4 +14,5 @@ export declare class Tile {
     color: any;
     border: CSSBorders;
     readonly container: JQuery<HTMLElement>;
+    locationToString(): string;
 }

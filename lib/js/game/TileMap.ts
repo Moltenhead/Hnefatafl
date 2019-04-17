@@ -3,11 +3,11 @@ import { Matrix } from "mathjs";
 import * as math from "mathjs";
 import { PathFinder } from "./PathFinder";
 import { ICoordinates } from '../utilities/ICoordinates';
-import { ITile } from './ITile';
+import { ITile, ITilePosition } from './ITile';
 
 export default class TileMap
 {
-  public name: String;
+  public name: string;
   public selector: JQuery;
   public tileContainer: JQuery;
   public pathFinder: PathFinder;
@@ -121,7 +121,7 @@ export default class TileMap
     var position = this.coordToPos(coordinates);
     var tile: ITile = {
       validity: false,
-      tile: this.getTileAt(position.col, position. row);
+      tile: this.getTileAt(position.col, position. row)
     };
 
     return tile;

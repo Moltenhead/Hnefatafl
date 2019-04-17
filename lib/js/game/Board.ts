@@ -72,6 +72,10 @@ export class Board extends TileMap
   getColor(index) {
       return this.tileColors[index];
   }
+
+  append(object: Pawn) {
+    
+  }
 }
 
 export class TaflBoard extends Board
@@ -82,7 +86,14 @@ export class TaflBoard extends Board
 
   public fullSizeCanvas: HTMLCanvasElement;
 
-  constructor(wrapper: JQuery, tileSize: number, columnsNb: number, rowsNb: number, tileColors: Array<String>, tileBorders: Array<number|String>) {
+  constructor(
+    wrapper: JQuery,
+    tileSize: number,
+    columnsNb: number,
+    rowsNb: number,
+    tileColors: Array<String>,
+    tileBorders: Array<number|String>
+  ) {
     super(wrapper, tileSize, columnsNb, rowsNb, tileColors, tileBorders);
 
     this.selector.addClass('tafle-board');
@@ -146,8 +157,6 @@ export class TaflBoard extends Board
         _this.castles.push(tile);
       }
     });
-
-    console.debug(this.castles);
 
     var tileTarget = this.grid.subset(
       math.index(

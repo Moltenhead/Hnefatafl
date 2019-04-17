@@ -1,3 +1,4 @@
+/// <reference types="jquery" />
 import TileMap from "./TileMap";
 export declare class Board extends TileMap {
     tileColors: string[];

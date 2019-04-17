@@ -4,55 +4,54 @@ import { Coordinates } from '../utilities/ICoordinates';
 /*  Base pawn object
 *
 *   declaration:
-*       new Pawn($Board, pawnType, pawnColor)
+*       new Pawn(Board, pawnType, pawnColor)
 */
 export class Pawn
 {
   public boardParent: Board;
 
   private _left: number;
+  private _top: number;
   private _right: number;
+  private _bottom: number;
 
   private _selector: JQuery;
-  private _isDownPressed: JQuery;
+  private _isDownPressed: Boolean;
 
-  constructor(board: Board, /*type: PawnType,*/ color: String) {
-    if (board.constructor.name != "Board") {
-      console.error("Object must have a Board object as 1st parameter");
-      return;
-    }
+  constructor(board: Board, /*type: PawnType,*/ color: string) {
+    const _this = this;
+
     this.boardParent = board
 
     this.x = 0;
     this.y = 0;
     this._isDownPressed = false;
 
-    var $this = $(this);
-
-//  HTMLElt creation
+    // HTMLElt creation
     this._selector = jQuery('<div/>', {
       class: 'pawn'
     });
 
-//      Events
-    $this.selector.mousedown(function(e) {
-      $this.isDownPressed = true;
+    // Events
+    const $this = this._selector
+    $this.mousedown($this, function(e: MouseEvent) {
+      _this._isDownPressed = true;
     });
-    $this.selector.mousemove(function(e) {
-      if ($this.isDownPressed == false) {
+    $this.mousemove($this, function(e: MouseEvent) {
+      if (this._isDownPressed == false) {
         console.debug("Object isn't mouse down pressed.");
         return;
       }
       let mouse__top = e.top;
       let mouse__left = e.left;
-      this.css({
+      _this.css({
         top: mouse__top,
         left: mouse__left 
       });
     });
-    $this.selector.mouseup(function(e) {
-      $this.isDownPressed = false;
-      $this.trySetToNearestCell();
+    $this.mouseup($this, function(e: MouseEvent) {
+      _this._isDownPressed = false;
+      _this.trySetToNearestTile();
     });
 
     this.boardParent.append(this.selector);
@@ -77,7 +76,7 @@ export class Pawn
 
     var tile__target = board.getNearestTile({ x: 0, y: 0 });                //requesting the nearest tile object
     if (tile__target.validity === false) {
-      console.error("Can't place on tile " + tile__target.locationToString())
+      console.error("Can't place on tile " + tile__target.tile.locationToString())
     }
   }
 }
