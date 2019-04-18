@@ -1,34 +1,34 @@
 {
-  "version": "0.0.1",
+  "version": "2.0.0",
   "tasks": [
-      {
-          "label": "watch",
-          "type": "shell",
-          "command": "tsc",
-          "args": [
-              "--watch"
-          ],
-          "isBackground": true,
-          "group": {
-              "kind": "build",
-              "isDefault": true
-          },
-          "problemMatcher": []
+    {
+      "label": "watch",
+      "type": "shell",
+      "command": "tsc",
+      "args": [
+        "--watch"
+      ],
+      "isBackground": true,
+      "group": {
+        "kind": "build",
+        "isDefault": true
       },
-      {
-          "label": "build",
-          "type": "shell",
-          "command": "tsc",
-          "group": "build",
-          "args": [],
-          "problemMatcher": []
-      },
-      {
-          "type": "typescript",
-          "tsconfig": "tsconfig.json",
-          "problemMatcher": [
-              "$tsc"
-          ]
-      }
+      "problemMatcher": []
+    },
+    {
+      "label": "build",
+      "type": "shell",
+      "command": "tsc",
+      "group": "build",
+      "args": [],
+      "problemMatcher": []
+    },
+    {
+      "type": "typescript",
+      "tsconfig": "tsconfig.json",
+      "problemMatcher": [
+        "$tsc"
+      ]
+    }
   ]
 }
