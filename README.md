@@ -50,30 +50,30 @@ Record game moves|:white_large_square:
 :deciduous_tree:|:evergreen_tree:|:ear_of_rice:|:blossom:|:herb:|:seedling:|I|:frog:
 ----------------|----------------|-------------|---------|------|----------|-|------
 .|:file_folder:*.vscode/*|||||I|
-.||- [tasks.json](https://github.com/Moltenhead/Hnefatafl/tree/develop/d.vscode/tasks.json)||||I|:sunny:
+.||- [tasks.json](https://github.com/Moltenhead/Hnefatafl/tree/dev/d.vscode/tasks.json)||||I|:sunny:
 .|:file_folder:*design/*|||||I|
 .||:file_folder:*css/*||||I|
-.|||- [main.css](https://github.com/Moltenhead/Hnefatafl/tree/develop/design/css/main.css)|||I|:sunny:
+.|||- [main.css](https://github.com/Moltenhead/Hnefatafl/tree/dev/design/css/main.css)|||I|:sunny:
 .|:file_folder:*lib/*|||||I|
 .||:file_folder:*js/*||||I|
 .|||:file_folder:*game/*|||I|
-.||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/Board.js)||I|:sunny:
-.||||- [ITile.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/Tile.js)||I|:sunny:
-.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/develop/master/lib/js/game/PathFinder.js)||I|:sweat_drops:
-.||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/Pawn.js)||I|:cloud:
-.||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/TaflBoard.js)||I|:cloud:
-.||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/Tile.js)||I|:sunny:
-.||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/TileMap.js)||I|:sunny:
+.||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Board.js)||I|:sunny:
+.||||- [ITile.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Tile.js)||I|:sunny:
+.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/dev/master/lib/js/game/PathFinder.js)||I|:sweat_drops:
+.||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Pawn.js)||I|:cloud:
+.||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/TaflBoard.js)||I|:cloud:
+.||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Tile.js)||I|:sunny:
+.||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/TileMap.js)||I|:sunny:
 .|||:file_folder:*utilities/*|||I|
-.||||- [ArrayLike.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/utilities/ArrayLike.js)||I|:cloud:
-.||||- [ICoordinates.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/utilities/ICoordinates.js)||I|:cloud:
-.|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/core.js)|||I|:sunny:
-.|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/develop/index.html)|||||I|:sunny:
-.|- [package-lock.json](https://github.com/Moltenhead/Hnefatafl/tree/develop/package-lock.json)|||||I|
-.|- [package.json](https://github.com/Moltenhead/Hnefatafl/tree/develop/package.json)|||||I|
-.|- [LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/develop/LICENSE)|||||I|
-.|- [README.md](https://github.com/Moltenhead/Hnefatafl/tree/develop/README.md)|||||I|
-.|- [tsconfig.json](https://github.com/Moltenhead/Hnefatafl/tree/develop/tsconfig.json)|||||I|
+.||||- [ArrayLike.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/utilities/ArrayLike.js)||I|:cloud:
+.||||- [ICoordinates.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/utilities/ICoordinates.js)||I|:cloud:
+.|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/core.js)|||I|:sunny:
+.|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/dev/index.html)|||||I|:sunny:
+.|- [package-lock.json](https://github.com/Moltenhead/Hnefatafl/tree/dev/package-lock.json)|||||I|
+.|- [package.json](https://github.com/Moltenhead/Hnefatafl/tree/dev/package.json)|||||I|
+.|- [LICENSE](https://github.com/Moltenhead/Hnefatafl/tree/dev/LICENSE)|||||I|
+.|- [README.md](https://github.com/Moltenhead/Hnefatafl/tree/dev/README.md)|||||I|
+.|- [tsconfig.json](https://github.com/Moltenhead/Hnefatafl/tree/dev/tsconfig.json)|||||I|
 
 :frog: WeatherLord|:sunny: isAlright|:cloud: isShaddy|:sweat_drops: isRainingSweat|:ocean: isChaos
 -|-|-|-|-
