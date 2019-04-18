@@ -65,8 +65,8 @@ Record game moves|:white_large_square:
 .||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/classes/Tile.js)||I|:sunny:
 .||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/classes/TileMap.js)||I|:sunny:
 .|||:file_folder:*utilities/*|||I|
-.||||- [ArrayLike.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/utilities/ArrayLike.js)||I|:sunny:
-.||||- [ICoordinates.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/utilities/ICoordinates.js)||I|:sunny:
+.||||- [ArrayLike.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/utilities/ArrayLike.js)||I|:cloud:
+.||||- [ICoordinates.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/utilities/ICoordinates.js)||I|:cloud:
 .|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/core.js)|||I|:sunny:
 .|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/develop/index.html)|||||I|:sunny:
 .|- [package-lock.json](https://github.com/Moltenhead/Hnefatafl/tree/develop/package-lock.json)|||||I|
