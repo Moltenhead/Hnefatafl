@@ -65,21 +65,8 @@ export default class TileMap
 
     this.grid = <Matrix>math.zeros(columnsNb, rowsNb, "dense");
 
-    var _this = this;
-    this.grid.map(function (value: any, index: number, matrix: Matrix) {
-      var row: number = 0;
-      var i: number = 0;
-      while (i <= index) {
-        for (var j: number = 0; j < _this.columnsNb; j++) {
-          if (i < _this.columnsNb) {
-            i++
-          } else { return; }
-        }
-        row ++;
-      }
-      var c = index / row;
-      var r = row;
-      _this.appendTile(c, r, new Tile(_this.selector, _this.tileSize, c, r));
+    this.grid.map((value: any, index: any, matrix: Matrix) => {
+      this.appendTile(index[0], index[1], new Tile(this.selector, this.tileSize, index[0], index[1]));
     });
 
     for (var c = 0; c < columnsNb; c++) {
@@ -96,11 +83,7 @@ export default class TileMap
     return this;
   }
 
-  // get selector() { return this.selector; }
-  // get grid() { return this.grid; }
-
   appendTile(column: number, row: number, tile: Tile) {
-    console.debug(this.grid.subset(math.index(column, row)));
     this.grid.subset(math.index(column, row), tile);
     this.tileContainer.append(tile.selector);
   }
