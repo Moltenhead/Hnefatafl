@@ -57,13 +57,13 @@ Record game moves|:white_large_square:
 .|:file_folder:*lib/*|||||I|
 .||:file_folder:*js/*||||I|
 .|||:file_folder:*game/*|||I|
-.||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/classes/Board.js)||I|:sunny:
-.||||- [ITile.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/classes/Tile.js)||I|:sunny:
-.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/develop/master/lib/js/classes/PathFinder.js)||I|:sweat_drops:
-.||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/classes/Pawn.js)||I|:cloud:
-.||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/classes/TaflBoard.js)||I|:cloud:
-.||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/classes/Tile.js)||I|:sunny:
-.||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/classes/TileMap.js)||I|:sunny:
+.||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/Board.js)||I|:sunny:
+.||||- [ITile.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/Tile.js)||I|:sunny:
+.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/develop/master/lib/js/game/PathFinder.js)||I|:sweat_drops:
+.||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/Pawn.js)||I|:cloud:
+.||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/TaflBoard.js)||I|:cloud:
+.||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/Tile.js)||I|:sunny:
+.||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/game/TileMap.js)||I|:sunny:
 .|||:file_folder:*utilities/*|||I|
 .||||- [ArrayLike.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/utilities/ArrayLike.js)||I|:cloud:
 .||||- [ICoordinates.js](https://github.com/Moltenhead/Hnefatafl/tree/develop/lib/js/utilities/ICoordinates.js)||I|:cloud:
