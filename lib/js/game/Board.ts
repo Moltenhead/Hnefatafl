@@ -26,10 +26,6 @@ export class Board extends TileMap
     this.tileColors = tileColors;
     this.tileBorders = tileBorders
 
-    var _this = this;
-    tileColors.forEach(function(color, i) {
-      _this.tileColors[i] = color;
-    });
     this.colorize();
 
     return this;
@@ -37,9 +33,9 @@ export class Board extends TileMap
 
   colorize() {
     const { columnsNb, rowsNb } = this
-    this.grid.forEach((tile: Tile, index: number) => {
-      var c = index%columnsNb;
-      var r = index/columnsNb;
+    this.grid.forEach((tile: Tile, index: any) => {
+      var c = index[0];
+      var r = index[1];
       tile.color = ((c + r) % 2 === 0) ? this.getColor(0) : this.getColor(1);
       if (this.tileBorders) {
         var endString = "px " + this.tileBorders[1] + " " + this.getColor(3);
@@ -68,7 +64,6 @@ export class Board extends TileMap
           borders.right = fullString;
         }
 
-        // console.debug(borders);
         tile.border = borders;
       }
     });
@@ -105,31 +100,6 @@ export class TaflBoard extends Board
 
     this.castles = new Array();
 
-    // var firstSVGLine = jQuery("<line/>", {
-    //   'x1': '0',
-    //   'y1': '100%',
-    //   'x2': '100%',
-    //   'y2': '0'
-    // });
-    // firstSVGLine.css({
-    //   'stroke': tileColors[3],
-    //   'strokeWidth': tileBorders[0]
-    // });
-    // var secondSVGLine = jQuery("<line/>", {
-    //   'x1': '0',
-    //   'y1': '0',
-    //   'x2': '100%',
-    //   'y2': '100%'
-    // });
-    // secondSVGLine.css({
-    //   'stroke': tileColors[3],
-    //   'strokeWidth': tileBorders[0]
-    // });
-
-    // this.cornerToCornerSVGTemplate = jQuery("<canvas/>", {
-    //   'class': 'corner-to-corner-svg',
-    // });
-
     this.fullSizeCanvas = document.createElement("canvas");
     let wantedValue = tileSize - <number>tileBorders[0];
     $(this.fullSizeCanvas).attr('width', wantedValue);
@@ -145,11 +115,7 @@ export class TaflBoard extends Board
     cToC.lineTo(wantedValue,wantedValue);
     cToC.moveTo(wantedValue,0);
     cToC.lineTo(0,wantedValue);
-  
-    // this.cornerToCornerSVGTemplate.append(firstSVGLine);
-    // this.cornerToCornerSVGTemplate.append(secondSVGLine);
     
-    var _this = this;
     const { grid } = this
     const corners = [
       grid.get([0,0]),
@@ -157,26 +123,25 @@ export class TaflBoard extends Board
       grid.get([rowsNb-1,0]),
       grid.get([rowsNb-1,columnsNb-1])
     ]
-    corners.forEach(function (tile: Tile) {
+    corners.forEach((tile: Tile) => {
       tile.selector.addClass('tafl-castle');
-      tile.selector.append(<HTMLCanvasElement>$("<canvas/>").get(0));
-      _this.castles.push(tile);
+      tile.selector.append($(this.fullSizeCanvas).clone());
+      this.castles.push(tile);
     });
 
-    const tileTarget = <Tile>this.grid.subset(
+    const tileTarget = <any>this.grid.subset(
       math.index(
         Math.floor(columnsNb/2),
         Math.floor(rowsNb/2)
       )
-    ).get([0,0]);
+    );
 
     tileTarget.selector.addClass('tafl-castle tafl-king-hill');
-    tileTarget.selector.append(<HTMLCanvasElement>$("<canvas/>").get(0));
+    tileTarget.selector.append($(this.fullSizeCanvas).clone());
     this.castles.push(tileTarget);
 
-    const $tafleCastles: JQuery = $("canvas.tafl-castle")
-    for (let i = 0; i < $tafleCastles.length; i++) {
-      const targetCanvas = <HTMLCanvasElement>$($tafleCastles[i]).children('canvas').get(0)
+    this.castles.forEach((castle: Tile) => {
+      const targetCanvas = <HTMLCanvasElement>castle.selector.children('canvas').get(0)
       const context = targetCanvas.getContext("2d");
       if (context) {
         context.lineWidth = <number>tileBorders[0];
@@ -184,7 +149,7 @@ export class TaflBoard extends Board
       } else {
         console.error("context is null or undefined", context)
       }
-    }
+    })
 
     return this;
   }
