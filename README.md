@@ -57,17 +57,17 @@ Record game moves|:white_large_square:
 .|:file_folder:*lib/*|||||I|
 .||:file_folder:*js/*||||I|
 .|||:file_folder:*game/*|||I|
-.||||- [Board.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Board.js)||I|:sunny:
-.||||- [ITile.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Tile.js)||I|:sunny:
-.||||- [PathFinder.js](https://github.com/Moltenhead/Hnefatafl/dev/master/lib/js/game/PathFinder.js)||I|:sweat_drops:
-.||||- [Pawn.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Pawn.js)||I|:cloud:
-.||||- [TaflBoard.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/TaflBoard.js)||I|:cloud:
-.||||- [Tile.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Tile.js)||I|:sunny:
-.||||- [TileMap.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/TileMap.js)||I|:sunny:
+.||||- [Board.ts](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Board.ts)||I|:sunny:
+.||||- [ITile.ts](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Tile.ts)||I|:sunny:
+.||||- [PathFinder.ts](https://github.com/Moltenhead/Hnefatafl/dev/master/lib/js/game/PathFinder.ts)||I|:sweat_drops:
+.||||- [Pawn.ts](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Pawn.ts)||I|:cloud:
+.||||- [TaflBoard.ts](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/TaflBoard.ts)||I|:cloud:
+.||||- [Tile.ts](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/Tile.ts)||I|:sunny:
+.||||- [TileMap.ts](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/game/TileMap.ts)||I|:sunny:
 .|||:file_folder:*utilities/*|||I|
-.||||- [ArrayLike.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/utilities/ArrayLike.js)||I|:cloud:
-.||||- [ICoordinates.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/utilities/ICoordinates.js)||I|:cloud:
-.|||- [core.js](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/core.js)|||I|:sunny:
+.||||- [ArrayLike.ts](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/utilities/ArrayLike.ts)||I|:cloud:
+.||||- [ICoordinates.ts](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/utilities/ICoordinates.ts)||I|:cloud:
+.|||- [core.ts](https://github.com/Moltenhead/Hnefatafl/tree/dev/lib/js/core.ts)|||I|:sunny:
 .|- [index.html](https://github.com/Moltenhead/Hnefatafl/tree/dev/index.html)|||||I|:sunny:
 .|- [package-lock.json](https://github.com/Moltenhead/Hnefatafl/tree/dev/package-lock.json)|||||I|
 .|- [package.json](https://github.com/Moltenhead/Hnefatafl/tree/dev/package.json)|||||I|
