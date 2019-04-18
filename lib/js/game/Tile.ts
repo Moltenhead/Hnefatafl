@@ -19,6 +19,7 @@ export default class Tile
   constructor(container: JQuery, size: number, columnIndex: number, rowIndex: number) {
     if (!container) {
       console.error("Tile needs a JQuery parent as 1st argument.")
+      return
     }
     this._container = container;
 
@@ -32,10 +33,10 @@ export default class Tile
     this.border = new CSSBorders("none");
 
     this.selector.css({
-      'width': size + "px",
-      'height': size + "px",
-      'position': "absolute",
-      'gridArea': (this.col + 1) + " / " + (this.row +1)
+      width: size + "px",
+      height: size + "px",
+      position: "absolute",
+      gridArea: (this.col + 1) + " / " + (this.row +1)
     });
 
     return this
