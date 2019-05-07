@@ -2,8 +2,9 @@ import * as math from "mathjs";
 import TileMap from "./TileMap";
 import Tile from "./Tile";
 import { Pawn } from "./Pawn";
+import { IBoard } from "./IBoard";
 
-export class Board extends TileMap
+export class Board implements IBoard
 {
   public tileColors: string[];
   public tileBorders: Array<number|string>;
@@ -11,17 +12,17 @@ export class Board extends TileMap
   constructor(wrapper: JQuery, tileSize: number, columnsNb: number, rowsNb: number, tileColors: Array<string>, tileBorders: Array<number|string>) {
     super(wrapper, tileSize, columnsNb, rowsNb);
 
-    this.name = "Board:" + columnsNb + "x" + rowsNb;
+    this._name = "Board:" + columnsNb + "x" + rowsNb;
     var computedWidth = this.width + tileSize * 2;
     var computedHeight = this.height + tileSize * 2;
 
-    this.selector.css({
+    this._selector.css({
       width: computedWidth + "px",
       height: computedHeight + "px",
       backgroundColor: tileColors[2]
     });
 
-    this.selector.addClass("board");
+    this._selector.addClass("board");
 
     this.tileColors = tileColors;
     this.tileBorders = tileBorders
@@ -96,7 +97,7 @@ export class TaflBoard extends Board
   ) {
     super(wrapper, tileSize, columnsNb, rowsNb, tileColors, tileBorders);
 
-    this.selector.addClass('tafle-board');
+    this._selector.addClass('tafle-board');
 
     this.castles = new Array();
 

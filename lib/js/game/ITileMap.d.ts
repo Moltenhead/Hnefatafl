@@ -1,15 +1,14 @@
 /// <reference types="jquery" />
+import { PathFinder } from "./PathFinder";
 import Tile from "./Tile";
 import { Matrix } from "mathjs";
-import { PathFinder } from "./PathFinder";
-import { ICoordinates } from '../utilities/ICoordinates';
-import { ITilePosition } from './ITile';
-import ITileMap from './ITileMap';
-export default class TileMap implements ITileMap {
-    _name: string;
-    _selector: JQuery;
-    _tileContainer: JQuery;
-    _pathFinder: PathFinder;
+import { ITilePosition } from "./ITile";
+import { ICoordinates } from "../utilities/ICoordinates";
+export default interface ITileMap {
+    readonly _name: string;
+    readonly _selector: JQuery;
+    readonly _tileContainer: JQuery;
+    readonly _pathFinder: PathFinder;
     wrapper: JQuery;
     tileSize: number;
     columnsNb: number;
@@ -17,7 +16,6 @@ export default class TileMap implements ITileMap {
     width: number;
     height: number;
     grid: Matrix;
-    constructor(wrapper: JQuery, tileSize: number, columnsNb: number, rowsNb: number);
     appendTile(column: number, row: number, tile: Tile): void;
     coordToPos(coordinates: ICoordinates): ITilePosition;
     getTileAt(position: ITilePosition): Tile;

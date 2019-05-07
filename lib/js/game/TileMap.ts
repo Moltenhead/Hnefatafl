@@ -3,26 +3,27 @@ import { Matrix } from "mathjs";
 import * as math from "mathjs";
 import { PathFinder } from "./PathFinder";
 import { ICoordinates } from '../utilities/ICoordinates';
-import { ITile, ITilePosition } from './ITile';
+import { ITilePosition } from './ITile';
+import ITileMap from './ITileMap';
 
-export default class TileMap
+export default class TileMap implements ITileMap
 {
-  public name: string;
-  public selector: JQuery;
-  public tileContainer: JQuery;
-  public pathFinder: PathFinder;
+  _name: string;
+  _selector: JQuery;
+  _tileContainer: JQuery;
+  _pathFinder: PathFinder;
 
-  public wrapper: JQuery;
+  wrapper: JQuery;
 
-  public tileSize: number;
+  tileSize: number;
 
-  public columnsNb: number;
-  public rowsNb: number;
+  columnsNb: number;
+  rowsNb: number;
 
-  public width: number;
-  public height: number;
+  width: number;
+  height: number;
 
-  public grid: Matrix;
+  grid: Matrix;
 
   constructor(wrapper: JQuery, tileSize: number, columnsNb: number, rowsNb: number) {
     if (!wrapper) {
@@ -30,16 +31,16 @@ export default class TileMap
       return;
     }
 
-    this.name = "TileMap";
+    this._name = "TileMap";
     this.width = tileSize * columnsNb;
     this.height = tileSize * rowsNb;
     this.columnsNb = columnsNb;
     this.rowsNb = rowsNb;
 
-    this.selector = jQuery("<div/>", {
+    this._selector = jQuery("<div/>", {
       class: 'tile-map ' + columnsNb +  "-col " + rowsNb + "-row"
     });
-    this.selector.css({
+    this._selector.css({
       'width': this.width + "px",
       'height': this.height + "px",
       'display': "flex",
@@ -47,11 +48,11 @@ export default class TileMap
       'alignItems': "center"
     });
 
-    this.tileContainer = jQuery("<div/>", {
+    this._tileContainer = jQuery("<div/>", {
       class: 'tile-container'
     });
 
-    this.tileContainer.css({
+    this._tileContainer.css({
       'width': this.width + "px",
       'height': this.height + "px",
       'display': "grid",
@@ -66,7 +67,7 @@ export default class TileMap
     this.grid = <Matrix>math.zeros(columnsNb, rowsNb, "dense");
 
     this.grid.map((value: any, index: any, matrix: Matrix) => {
-      this.appendTile(index[0], index[1], new Tile(this.selector, this.tileSize, index[0], index[1]));
+      this.appendTile(index[0], index[1], new Tile(this._selector, this.tileSize, index[0], index[1]));
     });
 
     for (var c = 0; c < columnsNb; c++) {
@@ -75,17 +76,17 @@ export default class TileMap
       }
     }
 
-    this.pathFinder = new PathFinder(columnsNb, rowsNb);
+    this._pathFinder = new PathFinder(columnsNb, rowsNb);
 
-    this.selector.append(this.tileContainer);
-    this.wrapper.append(this.selector);
+    this._selector.append(this._tileContainer);
+    this.wrapper.append(this._selector);
 
     return this;
   }
 
   appendTile(column: number, row: number, tile: Tile) {
     this.grid.subset(math.index(column, row), tile);
-    this.tileContainer.append(tile.selector);
+    this._tileContainer.append(tile.selector);
   }
 
   coordToPos(coordinates: ICoordinates) {
@@ -96,17 +97,12 @@ export default class TileMap
     return tilePosition;
   }
 
-  getTileAt(col: number, row: number) {
-    return <Tile>this.grid.get([col, row]);
+  getTileAt(position: ITilePosition) {
+    return <Tile>this.grid.get(<any>math.index([position.col, position.row]));
   }
 
-  getNearestTile(coordinates: ICoordinates) {
-    var position = this.coordToPos(coordinates);
-    var tile: ITile = {
-      validity: false,
-      tile: this.getTileAt(position.col, position. row)
-    };
-
-    return tile;
+  getNearestTile(where: ICoordinates | ITilePosition) {
+    var position = (<ICoordinates>where) ? this.coordToPos(<ICoordinates>where) : <ITilePosition>where;
+    return <Tile>this.getTileAt(position);
   }
 }

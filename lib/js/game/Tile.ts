@@ -1,20 +1,20 @@
 import { CSSBorders } from '../utilities/ArrayLike';
-// import { ITile } from './ITile';
+import { ITile, ITilePosition } from './ITile';
 
-export default class Tile
+export default class Tile implements ITile
 {
-  private _container: JQuery;
+  _validity?: boolean;
+  _container: JQuery;
 
-  private _selector: JQuery;
+  _selector: JQuery;
 
-  public top: number;
-  public left: number;
+  _color: string;
+  _border: CSSBorders;
 
-  public col: number;
-  public row: number;
+  top: number;
+  left: number;
 
-  private _color: string;
-  private _border: CSSBorders;
+  position: ITilePosition
 
   constructor(container: JQuery, size: number, columnIndex: number, rowIndex: number) {
     if (!container) {
@@ -27,8 +27,8 @@ export default class Tile
       class: "tile"
     })
 
-    this.col = columnIndex;
-    this.row = rowIndex;
+    this.position.col = columnIndex;
+    this.position.row = rowIndex;
 
     this.border = new CSSBorders("none");
 
@@ -45,12 +45,26 @@ export default class Tile
   // GET / SET
   get selector() { return this._selector; }
 
+  set validity(v: boolean) {
+    this._validity = v
+  }
+
+  set col(v: number) {
+    this.position.col = v
+  }
+  get col() { return this.position.col }
+
+  set row(v: number) {
+    this.position.row = v
+  }
+  get row() { return this.position.row }
+
   // set y(v) { this._top = v; }
   // get y() { return this._top; }
   // set x(v) { this._left = v; }
   // get x() { return this._left; }
 
-  set color(v) {
+  set color(v: string) {
     this._color = v;
     this.selector.css('backgroundColor', v);
   }

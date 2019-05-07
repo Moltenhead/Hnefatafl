@@ -1,8 +1,8 @@
 /// <reference types="jquery" />
-import TileMap from "./TileMap";
 import Tile from "./Tile";
 import { Pawn } from "./Pawn";
-export declare class Board extends TileMap {
+import { IBoard } from "./IBoard";
+export declare class Board implements IBoard {
     tileColors: string[];
     tileBorders: Array<number | string>;
     constructor(wrapper: JQuery, tileSize: number, columnsNb: number, rowsNb: number, tileColors: Array<string>, tileBorders: Array<number | string>);

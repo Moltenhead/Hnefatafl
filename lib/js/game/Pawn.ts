@@ -83,7 +83,7 @@ export class Pawn
 
     let tile__target = board.getNearestTile({ x: 0, y: 0 });                //requesting the nearest tile object
     if (tile__target.validity === false) {
-      console.error("Can't place on tile " + tile__target.tile.locationToString())
+      console.error("Can't place on tile " + tile__target.locationToString())
     }
   }
 }
